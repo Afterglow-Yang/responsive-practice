@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>响应式首页</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!-- 引入响应式css -->
+		<link rel="stylesheet" type="text/css" href="css/response.css" />
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<label class="logo">LOGO</label>
+				<!-- 搜索框模块 -->
+				<div class="search">
+					<input type="search" name="" id="" placeholder="Please enter keywords">
+					<button>Search</button>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="container">
+				<input type="checkbox" id="toggler">
+
+				<label for="toggler">
+					<div class="hamburger-container">
+						<span></span>
+						<span></span>
+					</div>
+				</label>
+				<ul class="nav-items">
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="banner">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="images/banner_1.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/banner_2.jpg">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/banner_3.jpg">
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+		</div>
+		<div class="services">
+			<div class="container">
+				<h1>Our Services</h1>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<ul>
+					<li>
+						<img src="images/services-1.jpg" >
+						<div class="hidden-text">
+							<h3 class="wall_text">Services</h3>
+							<p class="details_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/services-2.jpg" >
+						<div class="hidden-text">
+							<h3 class="wall_text">Services</h3>
+							<p class="details_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/services-3.jpg" >
+						<div class="hidden-text">
+							<h3 class="wall_text">Services</h3>
+							<p class="details_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/services-4.jpg" >
+						<div class="hidden-text">
+							<h3 class="wall_text">Services</h3>
+							<p class="details_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+						</div>
+					</li>
+				</ul>
+				<div class="more-btn">
+					<a href="#">Read More</a>
+				</div>
+			</div>	
+		</div>
+		<div class="about">
+			<div class="container">
+				<div class="about_img">
+					<img src="images/about.jpg" alt="">
+				</div>
+				<div class="about_text">
+					<h1>About Us</h1>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+					<div class="more-btn">
+						<a href="#">Read More</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<footer>
+			<div class="container">
+				<label class="logo" style="color: #fff;">LOGO</label>
+				<div class="link">
+					<dl>
+						<dt>Useful link</dt>
+						<dd><a href="#">Home</a></dd>
+						<dd><a href="#">About</a></dd>
+						<dd><a href="#">Services</a></dd>
+						<dd><a href="#">Contact</a></dd>
+						<dd><a href="#">News</a></dd>
+						<dd><a href="#">Blog</a></dd>
+					</dl>
+					<dl>
+						<dt>Contact Us</dt>
+						<dd><a href="#">Location</a></dd>
+						<dd><a href="#">(+86 1234567890)</a></dd>
+						<dd><a href="#">(+0769 12345678)</a></dd>
+						<dd><a href="#">demo@163.com</a></dd>
+					</dl>
+					<dl>
+						<dt>Newsletter</dt>
+						<dd>Lorem ipsum dolor sit amet, <br />consectet adipi elit,<br /> sed do eius tempor.</dd>
+						<dd><input type="text" class="email-input" placeholder="Your Email"></dd>
+						<dd><button class="send-btn">Send Mail</button></dd>
+					</dl>
+				</div>
+			</div>
+		</footer>
+		<div class="copyright">
+			Copyright &copy; <script>
+				document.write(new Date().getFullYear());
+			</script>.
+			杨宇辉 All Rights Reservd. 版权所有
+		</div>
+		<!-- Swiper JS -->
+		<script src="js/swiper-bundle.min.js"></script>
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		</script>
+	</body>
+</html>
